@@ -8,7 +8,6 @@
   </head>
   <body>
     <header>
-      <h1>My Portfolio</h1>
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -17,31 +16,48 @@
     </header>
 
     <main>
+      <h1>My Portfolio</h1>
       <section class="About">
         <h1>Alan Thomas</h1>
         <p>+447455437083</p>
         <a href="mailto:alan.thomas@example.com"
           >Email Me at alanthomas171@gmail.com</a
         >
-        <img src="./images/lmao.png" alt="Profile Picture" />
+        <img
+          src="./images/lmao.png"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <p class="bio">
+          A passionate full stack developer with experience in building dynamic
+          web applications.
+        </p>
       </section>
       <section class="Projects">
         <h2>Projects</h2>
-        <ul>
-          <li>
-            <h3>Project 1: Film Recommender</h3>
-            <p>
-              A film recommender system built with Python and machine learning.
-            </p>
-          </li>
-          <li>
-            <h3>Project 2: To-Do List App</h3>
-            <p>
-              A simple to-do list application built with JavaScript and local
-              storage.
-            </p>
-          </li>
-        </ul>
+        <div class="projectcards">
+          <div class="card">
+            <img src="./images/film.png" alt="Avatar" />
+            <div class="container">
+              <h3>Project 1: Film Recommender</h3>
+              <p>
+                A film recommender system built with Python and machine
+                learning.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/todo.png" alt="Avatar" />
+            <div class="container">
+              <h3>Project 2: To-Do List App</h3>
+              <p>
+                A simple to-do list application built with JavaScript and local
+                storage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="Contact">
         <form>
           <label>
